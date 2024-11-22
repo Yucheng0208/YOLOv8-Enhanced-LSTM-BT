@@ -10,10 +10,14 @@ import ffmpeg
 import json
 import os
 
+
+hmodel=YOLO('hemlet.pt')
+
+
 model = YOLO('yolov8n-pose.pt')
 video_path = 0
 cap = cv2.VideoCapture(video_path)
-lstm_path = "LSTM_Model.pth"
+lstm_path = "LSTM_Model2.pth"
 LSTM_Model=LSTM_Model()
 LSTM_Model.load_state_dict(torch.load(lstm_path))
 if torch.cuda.is_available():
@@ -31,8 +35,49 @@ while cap.isOpened():
     fall=0
     success, frame = cap.read()
     if success:
+
+        resultss=hmodel(frame) #處理預測有無頭盔
+
         results = model(frame)
         result = model.predict(frame)[0]
+
+        # ---------------------------------------------------------------------------------------------------------------
+        # 偵測頭盔結果繪製
+        helmet_annotated_frame = frame.copy()  # 確保不改動原始影像
+        if resultss:
+            print(resultss[0].boxes)  # 確認是否有偵測框
+            for box in resultss[0].boxes:  # 取出偵測框
+                x1, y1, x2, y2 = map(int, box.xyxy[0].tolist())  # 偵測框座標
+                conf = box.conf[0]  # 信心度
+                # 修改分類邏輯
+                label = "Helmet" if box.cls[0] == 1 else "No Helmet"  # 索引 1 是有帽子，0 是沒帽子
+                color = (0, 255, 0) if label == "Helmet" else (0, 0, 255)  # 綠色表示有頭盔，紅色表示無頭盔
+                # 繪製框和文字
+                cv2.rectangle(helmet_annotated_frame, (x1, y1), (x2, y2), color, 2)
+                cv2.putText(
+                    helmet_annotated_frame,
+                    f"{label} {conf:.2f}",
+                    (x1, y1 - 10),
+                    cv2.FONT_HERSHEY_SIMPLEX,
+                    0.5,
+                    color,
+                    2,
+                )
+        else:
+            print("No helmet detected")
+
+        # **定義 annotated_frame** (人體偵測結果繪製)
+        annotated_frame = results[0].plot()
+
+        # 調整透明度並合成畫面
+        combined_frame = cv2.addWeighted(annotated_frame, 0.7, helmet_annotated_frame, 0.5, 0)
+
+        # 顯示畫面
+        cv2.imshow("YOLOv8 Helmet and Pose Detection", combined_frame)
+
+        # *----------------------------------------------------------------------------------
+
+
         if result.keypoints.conf != None:
             #keypoints = result.keypoints.data.tolist()
             #print(torch.tensor([]))
@@ -51,6 +96,7 @@ while cap.isOpened():
             npkeypoints = np.array(keypoints)
             npkeypointsconf = np.array(keypointsconf)
             #print(npkeypoints.shape)
+
 
             for a in range(npkeypoints.shape[0]):
                 data_listx=[]
@@ -110,7 +156,7 @@ while cap.isOpened():
 
 
         annotated_frame = results[0].plot()
-        cv2.imshow("YOLOv8 Inference", annotated_frame)
+        #cv2.imshow("YOLOv8 Inference", annotated_frame)
         if cv2.waitKey(1) & 0xFF == ord("q"):
             break
     else:
