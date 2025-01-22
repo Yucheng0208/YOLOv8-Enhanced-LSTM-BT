@@ -5,9 +5,7 @@ This project integrates **YOLOv8** for pose detection and object recognition, **
 
 ## Quick Start
 
-This is my HackMD.io post about the YOLOv8 Tutorial. It serves as a quick guide to help you get started efficiently. The content is written in Chinese and is user-friendly for Chinese-speaking readers. Feel free to refer to it for your learning needs!
-
-- [YoLov8 Tutorial](https://hackmd.io/@Yucheng208/YOLOv8-Tutorial)
+This is my HackMD.io post about the [YOLOv8 Tutorial]((https://hackmd.io/@Yucheng208/YOLOv8-Tutorial). It serves as a quick guide to help you get started efficiently. The content is written in Chinese and is user-friendly for Chinese-speaking readers. Feel free to refer to it for your learning needs!
 
 ---
 
