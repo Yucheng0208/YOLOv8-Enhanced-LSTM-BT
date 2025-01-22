@@ -116,7 +116,7 @@ YOLOv8_Pose_and_Object_LSTM_Bluetooth_Combined/
 
 ## Citation
 ```
-@misc{chang2025yolov8lstm,
+@article{chang2025yolov8lstm,
   author       = {Yu-Cheng Chang},
   title        = {YOLOv8-Enhanced-LSTM-BT},
   year         = {2025},
