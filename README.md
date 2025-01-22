@@ -1,10 +1,12 @@
 # YOLOv8 Pose and Object LSTM Bluetooth Combined
 
 ## Introduction
-This project integrates **YOLOv8** for pose detection and object recognition with **LSTM (Long Short-Term Memory)** for sequential analysis and **Bluetooth communication** for real-time interaction. It is designed to provide a robust solution for tracking and analyzing pose and object data in dynamic environments.
+This project integrates **YOLOv8** for pose detection and object recognition, **LSTM (Long Short-Term Memory)** for sequential analysis, and **Bluetooth communication** for real-time interaction. It is designed to provide a robust solution for tracking and analyzing pose and object data in dynamic environments.
 
 ## Quick Start
+
 This is my HackMD.io post about the YOLOv8 Tutorial. It serves as a quick guide to help you get started efficiently. The content is written in Chinese and is user-friendly for Chinese-speaking readers. Feel free to refer to it for your learning needs!
+
 [YoLov8 Tutorial](https://hackmd.io/@Yucheng208/YOLOv8-Tutorial)
 ---
 
