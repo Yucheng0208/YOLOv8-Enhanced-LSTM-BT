@@ -1,9 +1,11 @@
-
 # YOLOv8 Pose and Object LSTM Bluetooth Combined
 
 ## Introduction
 This project integrates **YOLOv8** for pose detection and object recognition with **LSTM (Long Short-Term Memory)** for sequential analysis and **Bluetooth communication** for real-time interaction. It is designed to provide a robust solution for tracking and analyzing pose and object data in dynamic environments.
 
+## Quick Start
+This is my HackMD.io post about the YOLOv8 Tutorial. It serves as a quick guide to help you get started efficiently. The content is written in Chinese and is user-friendly for Chinese-speaking readers. Feel free to refer to it for your learning needs!
+[YoLov8 Tutorial](https://hackmd.io/@Yucheng208/YOLOv8-Tutorial)
 ---
 
 ## Features
@@ -16,11 +18,11 @@ This project integrates **YOLOv8** for pose detection and object recognition wit
 ---
 
 ## TODO List: Bluetooth Integration
-This section outlines the tasks required to fully integrate Bluetooth communication into the project.
+This section outlines the tasks required to integrate Bluetooth communication into the project.
 
 1. **Bluetooth Module Configuration**
    - [ ] Install and configure the Bluetooth module on your device (e.g., HC-05, HC-06, or similar).
-   - [ ] Verify that the module is discoverable and properly paired with your computer or target device.
+   - [ ] Could you verify the module is discoverable and properly paired with your computer or target device?
 
 2. **Connection Protocol**
    - [ ] Define the communication protocol for transferring pose and object data (e.g., JSON or CSV format).
@@ -38,7 +40,7 @@ This section outlines the tasks required to fully integrate Bluetooth communicat
    - [ ] Design a feedback mechanism to receive acknowledgment or additional commands via Bluetooth.
 
 5. **Testing and Debugging**
-   - [ ] Test Bluetooth communication in a controlled environment with both static and dynamic data.
+   - [ ] Test Bluetooth communication in a controlled environment with static and dynamic data.
    - [ ] Debug any latency or data loss issues during transfer.
 
 6. **Documentation**
@@ -68,7 +70,7 @@ To set up the project, follow these steps:
    ```
 
 4. Set up the environment:
-   - Ensure that the necessary Bluetooth modules are installed and configured on your device.
+   - Ensure that your device installs and configures the necessary Bluetooth modules.
    - Update the configuration file `config.yaml` with your device-specific parameters.
 
 ---
@@ -110,6 +112,7 @@ YOLOv8_Pose_and_Object_LSTM_Bluetooth_Combined/
 ├── config.yaml             # Configuration file for parameters
 └── requirements.txt        # Required Python libraries
 ```
+
 
 ---
 
