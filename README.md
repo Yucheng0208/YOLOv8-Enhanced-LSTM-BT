@@ -114,6 +114,17 @@ YOLOv8_Pose_and_Object_LSTM_Bluetooth_Combined/
 └── requirements.txt        # Required Python libraries
 ```
 
+## Citation
+```
+@misc{chang2025yolov8lstm,
+  author       = {Yu-Cheng Chang},
+  title        = {YOLOv8-Enhanced-LSTM-BT},
+  year         = {2025},
+  publisher    = {GitHub},
+  journal      = {GitHub repository},
+  url          = {https://github.com/Yucheng0208/YOLOv8-Enhanced-LSTM-BT}
+}
+```
 
 ---
 
