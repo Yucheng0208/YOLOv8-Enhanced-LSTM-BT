@@ -116,14 +116,15 @@ YOLOv8_Pose_and_Object_LSTM_Bluetooth_Combined/
 
 ## Citation
 ```
-@article{chang2025yolov8lstm,
-  author       = {Yu-Cheng Chang},
-  title        = {YOLOv8-Enhanced-LSTM-BT},
-  year         = {2025},
-  publisher    = {GitHub},
-  journal      = {GitHub repository},
-  url          = {https://github.com/Yucheng0208/YOLOv8-Enhanced-LSTM-BT}
-}
+@inproceedings{tsai2024based,
+  title={Using Real-Time Integrated Computer Vision and Deep Learning for Advanced Factory Safety},
+  author={Tsai, Shang-Te and Chang, Yu-Cheng and Huang, Chao-Yi and Yang, Fang-Yuan and Chien, Wei and Wu, Zong-Rong},
+  booktitle={2024 IEEE 4rd International Conference on Electronic Communications, Internet of Things and Big Data (ICEIB)},
+  pages={647-649},
+  year={2024},
+  organization={IEEE},
+  doi={10.1109/ICEIB61477.2024.10602722}
+}}
 ```
 
 ---
