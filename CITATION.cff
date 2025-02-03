@@ -1,1 +1,24 @@
+# This CITATION.cff file was generated with https://bit.ly/cffinit
 
+cff-version: 1.2.0
+title: YOLOv8-Enhanced-LSTM-BT
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: Software
+authors:
+  - given-names: Yu-Cheng
+    family-names: Chang
+    affiliation: Department of Computer Science and Information Engineering, National Taipei University of Technology
+    orcid: 'https://orcid.org/0000-0003-1301-9192'
+  - given-names: Zong-Rong
+    family-names: Wu
+    affiliation: Department of Technical and Vocational Program in Artificial Intelligence, National Yunlin University of Science and Technology
+  - given-names: Hong-Yuan
+    family-names: Gu
+    affiliation: Department of Electrical  Engineering, Nainital Chin-Yii University of Technology
+repository-code: 'https://github.com/Yucheng0208/YOLOv8-Enhanced-LSTM-BT'
+url:''
+license: MIT LICENSE
+version: 
+date-released:''
