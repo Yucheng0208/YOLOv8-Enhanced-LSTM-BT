@@ -101,7 +101,7 @@ To set up the project, follow these steps:
 
 ## File Structure
 ```
-YOLOv8_Pose_and_Object_LSTM_Bluetooth_Combined/
+YOLOv8-Enhanced-LSTM-BT/
 │
 ├── data/                   # Sample datasets and testing data
 ├── models/                 # YOLOv8 and LSTM pre-trained models
