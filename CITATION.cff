@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Yu-Cheng"
+  given-names: "Chang"
+  orcid: "https://orcid.org/0000-0003-1301-9192"
+title: "YOLOv8-Enhanced-LSTM-BT"
+version: 1.0.0
+doi: 10.1109/ICEIB61477.2024.10602722
+date-released: 2025-02-03
+url: "https://github.com/Yucheng0208/YOLOv8-Enhanced-LSTM-BT"
