@@ -1,11 +1,25 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 authors:
-- family-names: "Yu-Cheng"
-  given-names: "Chang"
+- family-names: "Chang"
+  given-names: "Yu-Cheng"
   orcid: "https://orcid.org/0000-0003-1301-9192"
+- family-names: "Wu"
+  given-names: "Zong-Rong"
+- family-names: "Gu"
+  given-names: "Hong-Yuan"
 title: "YOLOv8-Enhanced-LSTM-BT"
 version: 1.0.0
 doi: 10.1109/ICEIB61477.2024.10602722
 date-released: 2025-02-03
 url: "https://github.com/Yucheng0208/YOLOv8-Enhanced-LSTM-BT"
+preferred-citation: |
+  @inproceedings{Tsai2024,
+    author    = {S.-T. Tsai and Y.-C. Chang and C.-Y. Huang and F.-Y. Yang and W. Chien and Z.-R. Wu},
+    title     = {Using Real-Time Integrated Computer Vision and Deep Learning for Advanced Factory Safety},
+    booktitle = {Proceedings of the 2024 IEEE 4th International Conference on Electronic Communications, Internet of Things and Big Data (ICEIB)},
+    year      = {2024},
+    month     = {4},
+    day       = {19-21},
+    doi       = {10.1109/ICEIB61477.2024.10602722}
+  }
